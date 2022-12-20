@@ -1,0 +1,315 @@
+
+@font-face {
+    src: url("../font/Montserrat-Regular.ttf");
+    font-style: normal;
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+@font-face {
+    src: url("../font/Montserrat-Medium.ttf");
+    font-style: normal;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+@font-face {
+    src: url("../font/Montserrat-Bold.ttf");
+    font-style: normal;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+/*Основные-настройки*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    font-family: Montserrat;
+}
+h1{
+    font-weight: 500;
+    font-style: normal;
+}
+h2{
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    font-weight: 300;
+    font-style: normal;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.container{
+    width: 100%;
+}
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+button{
+    font-family: Montserrat;
+}
+/*-----------------*/
+
+/*Шапка-сайта*/
+
+.box-main{
+    background-image: url("../img/bg.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 1300px;
+}
+header{
+    padding: 40px 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 1fr;
+    color: white;
+}
+.header-a{
+    width: max-content;
+}
+.header-h2{
+    font-size: 18px;
+}
+.address{
+    width: max-content;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}.address img{
+    width: 15px;
+ }.address div p{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.66);
+   }.address div p:nth-child(2){
+      margin-top: 5px;
+       }
+.call-center{
+    width: max-content;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    color: white;
+}.call-center img{
+     width: 18px;
+ }.call-center div h1{
+    font-size: 18px;
+   }
+  .call-center div p{
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.66);
+      margin-top: 5px;
+  }
+
+/*-----------------*/
+
+/*Главный-блок*/
+
+.main-content{
+    max-width: 560px;
+    margin-top: 180px;
+}
+.main-content h1{
+    font-size: 42px;
+}
+.main-content p:nth-child(3){
+    font-size: 21px;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.75);
+}
+.label-block{
+    display: inline-block;
+    font-size: 13px;
+    padding: 7px 13px;
+    background-color: #f5f5f5;
+    color: black;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.flex-block-btn-catalog{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}.catalog-btn{
+    background-color: #ffdd00;
+    color: rgba(0, 0, 0, 0.76);
+    padding: 25px 40px;
+    font-size: 15px;
+    border-radius: 6px;
+     transition: .4s;
+ }.catalog-btn:hover{
+       background-color: #938100;
+        transition: .4s;
+   }
+ .flex-block-btn-catalog p{
+     font-size: 13px;
+     color: rgba(255, 255, 255, 0.73);
+ }
+
+/*-----------------*/
+
+/*Каталог-десертов*/
+.block-items-catalog{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 100px;
+
+}
+.catalog-block-main .content h2{
+    margin: auto;
+    text-align: center;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.78);
+    margin-bottom: 100px;
+}.block-items-catalog .item img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+ }
+.block-items-catalog .item{
+    width: 100%;
+    border-radius: 10px;
+    height: 600px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.09);
+    color: rgba(0, 0, 0, 0.7);
+}
+.block-items-catalog .item h2{
+    text-align: left;
+    font-size: 26px;
+    margin: 0;
+ }
+.block-padding-item{
+    padding: 40px 30px;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.btn-order{
+    background-color: #ffdd00;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    width: max-content;
+    padding: 20px 50px;
+    font-size:15px;
+    color: rgba(0, 0, 0, 0.78);
+}
+/*-----------------*/
+
+/*Блок-с-заказом-по-фото*/
+.sky{
+    position: absolute;
+    width: 100%;
+}
+.skyTop{
+    top: 0;
+}
+.skyBottom{
+    bottom: 0;
+}
+.block-phone-photo{
+    position: relative;
+    background-color: #090f2c;
+    height: 1010px;
+    color: white;
+}
+.block-phone-photo .content{
+    padding-top: 300px;
+    background: url("../img/phone 1.png");
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position-y: 300px;
+    height: 100%;
+
+}
+.text-content{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 55%;
+    margin-top: 5%;
+}.text-content .label-block{
+    width: max-content;
+ }
+.text-content h2{
+    font-size: 30px;
+    line-height: 38px;
+}
+
+/*-----------------*/
+
+/*Блок-с-обратной-связью*/
+.content-conditer-ask{
+    padding: 200px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text-content-ask{
+    width: 500px;
+    color: rgba(0, 0, 0, 0.73);
+}.text-content-ask h2{
+    font-size: 40px;
+ }.text-content-ask ul li {
+    margin: 30px 20px;
+   }
+.block-conditer-avatars{
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+.block-conditer-avatars .circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #ffdd00;
+    background-image: url("../img/woman 2.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -160px;
+}.block-conditer-avatars .conditer{
+    background-image: url("../img/woman 2.png");
+    background-repeat: no-repeat;
+     position: absolute;
+    background-size: 80%;
+    width: 100%;
+    height: 300px;
+    top: -160px;
+    left: 50px;
+ }
+.block-name-dolgnost{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -200px;
+    left: -200px;
+}
+.block-name-dolgnost .name{
+    width: max-content;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 10px 15px;
+}.block-name-dolgnost .dolgnost{
+     width: max-content;
+     background-color: rgb(213, 213, 213);
+     color: rgb(38, 38, 38);
+     padding: 10px 15px;
+ }
+/*-----------------*/
